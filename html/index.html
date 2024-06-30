@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Website</title>
+    <link rel="stylesheet" href="/bootstrap-5.3.3-dist/css/bootstrap.css">
+    <style>
+        /* Custom styles can be added here */
+        body, html {
+            height: 100%;
+            background-color: beige;
+        }
+        .about-section {
+            min-height: calc(100vh - 56px); /* Adjust for navbar height */
+            padding: 60px 0;
+            background-color: #f8f9fa;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .about-img {
+            height: 300px; /* Adjust height as per your preference */
+            width: auto;
+            max-width: 100%;
+            border-radius: 50%;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+        .about-text {
+            margin-top: 20px;
+        }
+        .footer {
+            background-color: #343a40;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px 0;
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">Home</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Experience
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="week1L.html">Week 1 - Leadership</a></li>
+                  <li><a class="dropdown-item" href="week1s.html">Week 1 - Software Engineering</a></li>
+                  <li><a class="dropdown-item" href="week2L.html">Week 2 - Leadership</a></li>
+                  <li><a class="dropdown-item" href="week2s.html">Week 2 - Software Engineering</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+    <section class="about-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <img src="../gallery/internet.jpg" alt="Your Name" class="about-img">
+                </div>
+                <div class="col-lg-6 about-text">
+                  <h1>Abakwase Immaculate</h1>
+                    <h4>Welcome to My Personal Website</h4>
+                    <p>Introduce yourself briefly here. You can talk about your skills, interests, and what visitors can expect from your website.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Abakwase Immaculate. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="/bootstrap-5.3.3-dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
